@@ -16,10 +16,12 @@ Attributes and Actions
 - The planting directly updates the UI by increasing ‘Seeds Planted’ count and decreasing ‘Seeds remaining’ count.
 
 ## Devlog
-Prompt: Include the HW1 break-down exercise you wrote during the Week 1 - Lecture 2 (Jan 9) in-class activity (above). If you did not attend and perform this activity, review the lecture slides and write your own plan for how you believe HW1 should be built. If your initially proposed plan turned out significantly different than the activity answers given by Prof Reid, you may want to note what was different. Then, write about how the plan you wrote in the break-down connects to the code you wrote. Cite specific class names and method names in the code and GameObjects in your Unity Scene.
 
+As instructed, before starting the implementation, I followed the instructions to create a plant prefab and set it up in the game. This connected my code and unity environment. Then, I worked on the player’s movement using the WASD keys. Initially, I used Input.GetKeyDown, but the movement felt choppy and wasn’t smooth. To fix this, I switched to Input.GetKey, which allowed continuous movement while the key was held down. I also normalized the movement and scaled it by speed and deltaTime to make sure it felt consistent and smooth regardless of the frame rate.
 
-Write your Devlog here!
+Once movement was working, I implemented the planting mechanic. Pressing the spacebar triggers the `PlantSeed()` method, which ensures that a plant is instantiated at the player’s position. At the same time, the UI needed to be updated  decrementing the number of seeds left and incrementing the number of seeds planted. The `UpdateSeeds()` in the `PlantCountUI` script dynamically updates the UI to reflect these changes, giving players clear feedback on their progress. In Unity, to make the game playable, I added the components and linked the UI text elements to 'Planted Text,' and 'Remaining text' on script. Additionally, I added two layers to make sure the plant appears above the player when planted.
+
+The breakdown connected to my code by providing clear instructions that guided my development process step by step. However, I initially overlooked certain details, such as adjusting the player's speed and properly setting the layers of the scene, which became apparent during the development process.
 
 
 ## Open-Source Assets
