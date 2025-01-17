@@ -27,3 +27,6 @@ The breakdown provided clear instructions that effectively guided the developmen
 ## Open-Source Assets
 If you added any other outside assets, list them here!
 - [Sprout Lands sprite asset pack](https://cupnooble.itch.io/sprout-lands-asset-pack) - character and item sprites
+
+## Prof comments
+Thank you for effectively connecting the break-down to your code in your Devlog and for formatting your break-down well!
